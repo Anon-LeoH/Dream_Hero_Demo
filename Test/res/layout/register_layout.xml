@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Login_Register" >
+
+    <TextView
+        android:id="@+id/index_num_fri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="注册"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/reg_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/index_num_fri"
+        android:layout_marginTop="25dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reg_uid"
+        android:layout_alignBottom="@+id/reg_uid"
+        android:layout_alignParentLeft="true"
+        android:text="用户名："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/reg_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/reg_uid"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reg_psw"
+        android:layout_alignBottom="@+id/reg_psw"
+        android:layout_alignLeft="@+id/tmp"
+        android:text="密码："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/reg_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/reg_psw"
+        android:layout_below="@+id/reg_psw"
+        android:layout_marginTop="25dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reg_uname"
+        android:layout_alignBottom="@+id/reg_uname"
+        android:layout_alignParentLeft="true"
+        android:text="昵称："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn_reg_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_reg_enter"
+        android:layout_alignBottom="@+id/btn_reg_enter"
+        android:layout_alignRight="@+id/reg_uname"
+        android:layout_toRightOf="@+id/btn_reg_enter"
+        android:text="返回" />
+
+    <Button
+        android:id="@+id/btn_reg_enter"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/reg_uname"
+        android:layout_marginTop="25dp"
+        android:text="确认" />
+
+</RelativeLayout>
